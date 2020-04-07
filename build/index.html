@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -9,48 +9,101 @@
     <title>Martplace</title>
   </head>
 
-<body>
-  <header class="header">
+  <body>
+    <header class="header">
   <div class="header__top">
     <div class="container">
       <div class="header__top-inner">
         <div class="header__logo">
-          <a href="#">
-            <img src="images/logo.png" alt="Logo" />
+          <a class="header__logo-link" href="#">
+            <img
+              class="header__logo-img"
+              src="images/header-logo.png"
+              alt="Logo"
+            />
+            <div class="header__logo-text">Mart<span>Place</span></div>
           </a>
         </div>
-        <a href="#" class="header__btn">Become a Seller</a>
-        <div class="header__user"></div>
-      </div>
-      <div class="header__menu">
-        <div class="container">
-            <div class="header__menu-inner">
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <li><a href="#">home</a></li>
-                        <li><a href="#">all products</a></li>
-                        <li><a href="#">wordpress</a></li>
-                        <li><a href="#">festures</a></li>
-                        <li><a href="#">pages</a></li>
-                    </ul>                               
+        <div class="header__btn">
+          <a href="#" >Become a Seller</a>
+        </div>
 
-                </nav>
-            </div>
+        <div class="header__author">
+          <a
+            class="header__author-avatar"
+            href="#"
+            style="background-image: url(images/icons/header-avatar.jpg);"
+          ></a>
+          <div class="header__author-info">
+            <a class="header__author-name" href="#">
+              Taofiq Hakim
+            </a>
+            <a class="header__author-price" href="#">$20.45</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__menu">
+    <div class="container">
+      <div class="header__menu-inner">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li><a href="#">home</a></li>
+            <li><a href="#">all products</a></li>
+            <li><a href="#">wordpress</a></li>
+            <li><a href="#">festures</a></li>
+            <li><a href="#">pages</a></li>
+          </ul>
+        </nav>
+        <div class="menu__form">
+          <form action="">
+            <input type="text" placeholder="Search product here..." required />
+            <button type="submit">
+              <i class="icon-search"></i>
+            </button>
+          </form>
         </div>
       </div>
     </div>
   </div>
 </header>
 
-  <!-- WRITE CODE HERE -->
+    <section class="search">
+      <div class="container">
+        <div class="search__inner">
+          <div class="search__inner-title">
+            Create Your Own
+            <span>Digital Product Marketplace</span>
+          </div>
+          <div class="search__inner-text">
+            MartPlace is the most powerful, & customizable template for Easy
+            Digital Downloads Products
+          </div>
+          <div class="search__inner-btn">
+            <button type="button">View All Products</button>
+            <button type="button">Popular Products</button>
+          </div>
+          <div class="search__form">
+            <form action="">
+              <input type="text" placeholder="Search your products..." required>
+              <ul>
+                <li><a href="">egbge</a></li>
+                <li><a href="">vervewv</a></li>
+                <li><a href="">vrevreve</a></li>
+              </ul>
+              <button type="button">Search Now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.search -->
 
-
-  <!-- STOP WRITE CODE -->
-  <footer>
+    <!-- STOP WRITE CODE -->
+    <footer>
   
-</footer>
-  <script src="js/libs.min.js"></script>
+</footer> <script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
-</body>
-
+  </body>
 </html>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap" rel="stylesheet">
     <title>Martplace</title>
@@ -86,10 +87,17 @@
         <div class="search__form">
           <form action="">
             <input type="text" placeholder="Search your products..." required />
-            <button class="search__form-categories" type="button">
-              All Categories
+            <div class="search__form-select">
+              <select>
+                <option value="" selected>All Categories</option>
+                <option value="tea">website</option>
+                <option value="coffee">plugin</option>
+                <option value="milk">landing page</option>
+              </select>
+            </div>
+            <button class="search__form-btn" type="button">
+              Search Now
             </button>
-            <button class="search__form-btn" type="button">Search Now</button>
           </form>
         </div>
       </div>
@@ -149,32 +157,35 @@
         </div>
       </div>
     </section>
-    <!-- /.features -->
-    <!-- <div class="hero-slider__arrow">
-      <a class="hero__prev-arrow"><i class="icon-angle-left"></i></a>
-      <a class="hero__next-arrow"><i class="icon-angle-right"></i></a>
-    </div> -->
     <section class="featured">
       <div class="container">
-        <div class="featured__title">
+        <div class="featured__title title-block">
           Weekly Featured Products
           <div class="featured__slider-arrow">
             <a class="featured__prev-arrow"><i class="icon-angle-left"></i></a>
-            <a class="featured__next-arrow"><i class="icon-angle-right"></i></a>
+            <a class="featured__next-arrow icon-angle-right"></a>
           </div>
         </div>
         <div class="featured__slider">
           <div class="featured__item">
             <div class="featured__inner">
-              <div class="featured__item-img"></div>
+              <div
+                class="featured__item-img"
+                style="background-image: url(images/content/featured-item.jpg);"
+              ></div>
               <div class="featured__item-content">
                 <div class="featured__item-title">
                   One Page Resume Template
                 </div>
-                <div class="featured__item-subtitle">
+                <div class="featured__item-subtitle subtitle">
                   <div class="subtitle__user">
-                    <div class="subtitle__user-img"></div>
-                    <div class="subtitle__user-name"></div>
+                    <div
+                      class="subtitle__user-img"
+                      style="
+                        background-image: url(images/content/subtitle-user.jpg);
+                      "
+                    ></div>
+                    <div class="subtitle__user-name">AazzTech</div>
                   </div>
                   <a href="#" class="subtitle_link">
                     <i class="icon-wordpress"></i>
@@ -189,9 +200,107 @@
                   scelerisque.
                 </div>
                 <div class="featured__item-btn">
-                  <button type="button">website</button>
-                  <button type="button">plugin</button>
-                  <button type="button">landing page</button>
+                  <button class="btn" type="button">website</button>
+                  <button class="btn" type="button">plugin</button>
+                  <button class="btn" type="button">landing page</button>
+                </div>
+                <div class="featured__item-row">
+                  <div class="featured__item-purchase"></div>
+                  <div class="product__item-star">
+                    <div class="rate-star"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="featured__item">
+            <div class="featured__inner">
+              <div
+                class="featured__item-img"
+                style="background-image: url(images/content/featured-item.jpg);"
+              ></div>
+              <div class="featured__item-content">
+                <div class="featured__item-title">
+                  One Page Resume Template
+                </div>
+                <div class="featured__item-subtitle subtitle">
+                  <div class="subtitle__user">
+                    <div
+                      class="subtitle__user-img"
+                      style="
+                        background-image: url(images/content/subtitle-user.jpg);
+                      "
+                    ></div>
+                    <div class="subtitle__user-name">AazzTech</div>
+                  </div>
+                  <a href="#" class="subtitle_link">
+                    <i class="icon-wordpress"></i>
+                    <span>WordPress</span>
+                  </a>
+                </div>
+                <div class="featured__item-text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                  justo ut scelerisque the mattis, leo quam aliquet congue
+                  placerat mi id nisi interdum mollis. Praesent pharetra, justo
+                  ut scelerisque the mattis, leo quam aliquet congue justo ut
+                  scelerisque.
+                </div>
+                <div class="featured__item-btn">
+                  <button class="btn" type="button">website</button>
+                  <button class="btn" type="button">plugin</button>
+                  <button class="btn" type="button">landing page</button>
+                </div>
+                <div class="featured__item-row">
+                  <div class="featured__item-purchase"></div>
+                  <div class="product__item-star">
+                    <div class="rate-star"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="featured__item">
+            <div class="featured__inner">
+              <div
+                class="featured__item-img"
+                style="background-image: url(images/content/featured-item.jpg);"
+              ></div>
+              <div class="featured__item-content">
+                <div class="featured__item-title">
+                  One Page Resume Template
+                </div>
+                <div class="featured__item-subtitle subtitle">
+                  <div class="subtitle__user">
+                    <div
+                      class="subtitle__user-img"
+                      style="
+                        background-image: url(images/content/subtitle-user.jpg);
+                      "
+                    ></div>
+                    <div class="subtitle__user-name">AazzTech</div>
+                  </div>
+                  <a href="#" class="subtitle_link">
+                    <i class="icon-wordpress"></i>
+                    <span>WordPress</span>
+                  </a>
+                </div>
+                <div class="featured__item-text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                  justo ut scelerisque the mattis, leo quam aliquet congue
+                  placerat mi id nisi interdum mollis. Praesent pharetra, justo
+                  ut scelerisque the mattis, leo quam aliquet congue justo ut
+                  scelerisque.
+                </div>
+                <div class="featured__item-btn">
+                  <button class="btn" type="button">website</button>
+                  <button class="btn" type="button">plugin</button>
+                  <button class="btn" type="button">landing page</button>
+                </div>
+                <div class="featured__item-row">
+                  <div class="featured__item-purchase"></div>
+                  <div class="featured__item-star">
+                    <div class="rate-star"></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -200,6 +309,288 @@
       </div>
     </section>
     <!-- /.featured -->
+    <section class="products">
+      <div class="container">
+        <div class="products__title title-block">
+          Newest Release Products
+          <a class="products__filter" href="#">
+            Filter by:
+            <img src="images/icons/filter-icon.svg" alt="" />
+          </a>
+        </div>
+
+        <div class="products__inner">
+          <div class="products__inner-btn title-block">
+            <button class="btn" data-filter=".category-plugins" type="button">
+              Plugins
+            </button>
+            <button class="btn" data-filter=".category-wordpress" type="button">
+              WordPress
+            </button>
+            <button class="btn" data-filter="all" type="button">
+              Site Template
+            </button>
+            <button class="btn" data-filter=".category-psd" type="button">
+              PSD Template
+            </button>
+            <button class="btn" data-filter=".category-joomla" type="button">
+              Joomla
+            </button>
+            <button class="btn" type="button">User Interface</button>
+            <button class="btn" type="button">Landing Page</button>
+            <button class="btn" type="button">Software</button>
+          </div>
+          <div class="products__inner-box">
+            <div class="products__item mix category-psd">
+              <a
+                class="products__item-img"
+                href="#"
+                style="background-image: url(images/content/product-item.jpg);"
+              >
+                <button type="button">More Info</button>
+                <button type="button">Live Demo</button>
+              </a>
+              <div class="products__item-content">
+                <a class="products__item-title" href="#"
+                  >Bryson - Portfolio Template</a
+                >
+                <div class="products__item-subtitle subtitle">
+                  <div class="subtitle__user">
+                    <div
+                      class="subtitle__user-img"
+                      style="
+                        background-image: url(images/content/subtitle-user.jpg);
+                      "
+                    ></div>
+                    <div class="subtitle__user-name">Artcorner</div>
+                  </div>
+                  <a href="#" class="subtitle_link">
+                    <i class="icon-html5"></i>
+                    <span>HTML</span>
+                  </a>
+                </div>
+                <div class="products__item-text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                  justo ut scelerisque the mattis, leo quam aliquet congue.
+                </div>
+              </div>
+              <div class="products__item-info">
+                <div class="products__item-purchase"></div>
+                <div class="products__item-star">
+                  <div class="rate-star"></div>
+                </div>
+              </div>
+            </div>
+            <div class="products__item mix category-plugin">
+              <a
+                class="products__item-img"
+                href="#"
+                style="background-image: url(images/content/product-item.jpg);"
+              >
+                <button type="button">More Info</button>
+                <button type="button">Live Demo</button>
+              </a>
+              <div class="products__item-content">
+                <a class="products__item-title" href="#"
+                  >Bryson - Portfolio Template</a
+                >
+                <div class="products__item-subtitle subtitle">
+                  <div class="subtitle__user">
+                    <div
+                      class="subtitle__user-img"
+                      style="
+                        background-image: url(images/content/subtitle-user.jpg);
+                      "
+                    ></div>
+                    <div class="subtitle__user-name">Artcorner</div>
+                  </div>
+                  <a href="#" class="subtitle_link">
+                    <i class="icon-html5"></i>
+                    <span>HTML</span>
+                  </a>
+                </div>
+                <div class="products__item-text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                  justo ut scelerisque the mattis, leo quam aliquet congue.
+                </div>
+              </div>
+              <div class="products__item-info">
+                <div class="products__item-purchase"></div>
+                <div class="products__item-star">
+                  <div class="rate-star"></div>
+                </div>
+              </div>
+            </div>
+            <div class="products__item mix category-html category-new">
+              <a
+                class="products__item-img"
+                href="#"
+                style="background-image: url(images/content/product-item.jpg);"
+              >
+                <button type="button">More Info</button>
+                <button type="button">Live Demo</button>
+              </a>
+              <div class="products__item-content">
+                <a class="products__item-title" href="#"
+                  >Bryson - Portfolio Template</a
+                >
+                <div class="products__item-subtitle subtitle">
+                  <div class="subtitle__user">
+                    <div
+                      class="subtitle__user-img"
+                      style="
+                        background-image: url(images/content/subtitle-user.jpg);
+                      "
+                    ></div>
+                    <div class="subtitle__user-name">Artcorner</div>
+                  </div>
+                  <a href="#" class="subtitle_link">
+                    <i class="icon-html5"></i>
+                    <span>HTML</span>
+                  </a>
+                </div>
+                <div class="products__item-text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                  justo ut scelerisque the mattis, leo quam aliquet congue.
+                </div>
+              </div>
+              <div class="products__item-info">
+                <div class="products__item-purchase"></div>
+                <div class="products__item-star">
+                  <div class="rate-star"></div>
+                </div>
+              </div>
+            </div>
+            <div class="products__item mix category-psd category-new">
+              <a
+                class="products__item-img"
+                href="#"
+                style="background-image: url(images/content/product-item.jpg);"
+              >
+                <button type="button">More Info</button>
+                <button type="button">Live Demo</button>
+              </a>
+              <div class="products__item-content">
+                <a class="products__item-title" href="#"
+                  >Bryson - Portfolio Template</a
+                >
+                <div class="products__item-subtitle subtitle">
+                  <div class="subtitle__user">
+                    <div
+                      class="subtitle__user-img"
+                      style="
+                        background-image: url(images/content/subtitle-user.jpg);
+                      "
+                    ></div>
+                    <div class="subtitle__user-name">Artcorner</div>
+                  </div>
+                  <a href="#" class="subtitle_link">
+                    <i class="icon-html5"></i>
+                    <span>HTML</span>
+                  </a>
+                </div>
+                <div class="products__item-text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                  justo ut scelerisque the mattis, leo quam aliquet congue.
+                </div>
+              </div>
+              <div class="products__item-info">
+                <div class="products__item-purchase"></div>
+                <div class="products__item-star">
+                  <div class="rate-star"></div>
+                </div>
+              </div>
+            </div>
+            <div class="products__item mix category-html category-new">
+              <a
+                class="products__item-img"
+                href="#"
+                style="background-image: url(images/content/product-item.jpg);"
+              >
+                <button type="button">More Info</button>
+                <button type="button">Live Demo</button>
+              </a>
+              <div class="products__item-content">
+                <a class="products__item-title" href="#"
+                  >Bryson - Portfolio Template</a
+                >
+                <div class="products__item-subtitle subtitle">
+                  <div class="subtitle__user">
+                    <div
+                      class="subtitle__user-img"
+                      style="
+                        background-image: url(images/content/subtitle-user.jpg);
+                      "
+                    ></div>
+                    <div class="subtitle__user-name">Artcorner</div>
+                  </div>
+                  <a href="#" class="subtitle_link">
+                    <i class="icon-html5"></i>
+                    <span>HTML</span>
+                  </a>
+                </div>
+                <div class="products__item-text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                  justo ut scelerisque the mattis, leo quam aliquet congue.
+                </div>
+              </div>
+              <div class="products__item-info">
+                <div class="products__item-purchase"></div>
+                <div class="products__item-star">
+                  <div class="rate-star"></div>
+                </div>
+              </div>
+            </div>
+            <div class="products__item mix category-plugins">
+              <a
+                class="products__item-img"
+                href="#"
+                style="background-image: url(images/content/product-item.jpg);"
+              >
+                <button type="button">More Info</button>
+                <button type="button">Live Demo</button>
+              </a>
+              <div class="products__item-content">
+                <a class="products__item-title" href="#"
+                  >Bryson - Portfolio Template</a
+                >
+                <div class="products__item-subtitle subtitle">
+                  <div class="subtitle__user">
+                    <div
+                      class="subtitle__user-img"
+                      style="
+                        background-image: url(images/content/subtitle-user.jpg);
+                      "
+                    ></div>
+                    <div class="subtitle__user-name">Artcorner</div>
+                  </div>
+                  <a href="#" class="subtitle_link">
+                    <i class="icon-html5"></i>
+                    <span>HTML</span>
+                  </a>
+                </div>
+                <div class="products__item-text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                  justo ut scelerisque the mattis, leo quam aliquet congue.
+                </div>
+              </div>
+              <div class="products__item-info">
+                <div class="products__item-purchase"></div>
+                <div class="products__item-star">
+                  <div class="rate-star"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="products__button">
+            <button type="button" data-filter=".category-new">
+              All New Products
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.products -->
 
     <!-- STOP WRITE CODE -->
     <footer>

@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
   <link rel="stylesheet" href="css/libs.min.css" />
   <link rel="stylesheet" href="css/style.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap" rel="stylesheet" />
@@ -21,7 +22,6 @@
               <div class="header__logo">
                 <a class="header__logo-link" href="#">
                   <img class="header__logo-img" src="images/header-logo.png" alt="Logo" />
-                  <div class="header__logo-text">Mart<span>Place</span></div>
                 </a>
               </div>
 
@@ -30,7 +30,7 @@
                   <a href="#">Become a Seller</a>
                 </div>
                 <div class="notifacation__box">
-                  <a class="notifacation header__circle active icon-bell" href="#"><span>25</span></a>
+                  <a class="notifacation header__circle active lnr lnr-alarm" href="#"><span>25</span></a>
                   <div class="notifacation__dropdown dropdown">
                     <div class="notifacation__top">
                       <div class="notifacation__title">
@@ -99,7 +99,7 @@
                 </div>
                 <!-- end notifacation__box -->
                 <div class="messega__box">
-                  <a class="messega header__circle active icon-mail" href="#"><span>6</span></a>
+                  <a class="messega header__circle active lnr lnr-envelope" href="#"><span>6</span></a>
                   <div class="dropdown">
                     <div class="messega__top">
                       <div class="messega__title">
@@ -112,7 +112,7 @@
                       <a href="#"><img class="messega__item-images" src="images/content/drop-down.jpg" alt="" /></a>
                       <div class="messega__info">
                         <a class="messega__info-name" href="#">
-                          Washim<span class="active icon-mail"></span>
+                          Washim<span class="active lnr lnr-envelope"></span>
                         </a>
                         <div class="messega__info-text">
                           Hello John Smith! Nunc placerat id...
@@ -125,7 +125,7 @@
                       <a href="#"><img class="dropdown__images" src="images/content/drop-down.jpg" alt="" /></a>
                       <div class="messega__info">
                         <a class="messega__info-name" href="#">
-                          Bulbul Ahmed<span class="active icon-mail"></span>
+                          Bulbul Ahmed<span class="active lnr lnr-envelope"></span>
                         </a>
                         <div class="messega__info-text">
                           Hello John Smith! Nunc placerat id...
@@ -176,7 +176,7 @@
                 </div>
                 <!-- end messega__box -->
                 <div class="basket__box">
-                  <a class="basket header__circle active icon-basket" href="#"><span>2</span></a>
+                  <a class="basket header__circle active lnr lnr-cart" href="#"><span>2</span></a>
                   <div class="basket__dropdown dropdown">
                     <div class="basket__items">
                       <div class="basket__item">
@@ -238,37 +238,59 @@
                   <div class="dropdown">
                     <ul>
                       <li>
-                        <a class="user__dropdown-link icon-html5" href="#">Profile Page</a>
+                        <a class="user__dropdown-link " href="#">
+                          <span class="lnr lnr-user"></span> Profile Page
+                        </a>
                       </li>
                       <li>
-                        <a class="user__dropdown-link icon-html5" href="#">Dashboard</a>
+                        <a class="user__dropdown-link" href="#">
+                          <span class="lnr lnr-home"></span> Dashboard
+                        </a>
                       </li>
                       <li>
-                        <a class="user__dropdown-link icon-html5" href="#">Account Settings</a>
+                        <a class="user__dropdown-link" href="#">
+                          <span class="lnr lnr-cog"></span> Account Settings
+                        </a>
                       </li>
                       <li>
-                        <a class="user__dropdown-link icon-html5" href="#">Your Purchases</a>
+                        <a class="user__dropdown-link" href="#">
+                          <span class="lnr lnr-cart"></span> Your Purchases
+                        </a>
                       </li>
                       <li>
-                        <a class="user__dropdown-link icon-html5" href="#">Your Favorites</a>
+                        <a class="user__dropdown-link" href="#">
+                          <span class="lnr lnr-heart"></span> Your Favorites
+                        </a>
                       </li>
                       <li>
-                        <a class="user__dropdown-link icon-html5" href="#">Add Credits</a>
+                        <a class="user__dropdown-link" href="#">
+                          <span class="lnr lnr-dice"></span> Add Credits
+                        </a>
                       </li>
                       <li>
-                        <a class="user__dropdown-link icon-html5" href="#">Sales Statements</a>
+                        <a class="user__dropdown-link" href="#">
+                          <span class="lnr lnr-chart-bars"></span> Sales Statements
+                        </a>
                       </li>
                       <li>
-                        <a class="user__dropdown-link icon-html5" href="#">Upload Item</a>
+                        <a class="user__dropdown-link" href="#">
+                          <span class="lnr lnr-upload"></span> Upload Item
+                        </a>
                       </li>
                       <li>
-                        <a class="user__dropdown-link icon-html5" href="#">Edit Item</a>
+                        <a class="user__dropdown-link" href="#">
+                          <span class="lnr lnr-book"></span> Edit Item
+                        </a>
                       </li>
                       <li>
-                        <a class="user__dropdown-link icon-html5" href="#">Withdrawals</a>
+                        <a class="user__dropdown-link" href="#">
+                          <span class="lnr lnr-briefcase"></span> Withdrawals
+                        </a>
                       </li>
                       <li>
-                        <a class="user__dropdown-link icon-html5" href="#">Logout</a>
+                        <a class="user__dropdown-link" href="#">
+                          <span class="lnr lnr-exit"></span> Logout
+                        </a>
                       </li>
                     </ul>
                     <span class="triangle"></span>
@@ -413,7 +435,7 @@
                 <form action="">
                   <input type="text" placeholder="Search product here..." required />
                   <button type="submit">
-                    <i class="icon-search"></i>
+                    <i class="lnr lnr-magnifier"></i>
                   </button>
                 </form>
               </div>
@@ -504,8 +526,8 @@
           <div class="featured__title title-block">
             Weekly Featured Products
             <div class="slider-arrow">
-              <a class="featured__prev-arrow prev-arrow icon-angle-left"></a>
-              <a class="featured__next-arrow next-arrow icon-angle-right"></a>
+              <a class="featured__prev-arrow prev-arrow lnr lnr-chevron-left"></a>
+              <a class="featured__next-arrow next-arrow lnr lnr-chevron-right"></a>
             </div>
           </div>
           <div class="featured__slider">
@@ -543,7 +565,17 @@
                     <button class="btn" type="button">landing page</button>
                   </div>
                   <div class="featured__item-row">
-                    <div class="featured__item-purchase"></div>
+                    <div class="featured__item-purchase">
+                      <div class="featured__prise">$10-$50</div>
+                      <div class="featured__like">
+                        <span class="lnr lnr-heart heart"></span>
+                        <span>46</span>
+                      </div>
+                      <div class="featured__basket">
+                        <span class="lnr lnr-cart"></span>
+                        <span>634</span>
+                      </div>
+                    </div>
                     <div class="product__item-star">
                       <div class="rate-star"></div>
                     </div>
@@ -585,7 +617,17 @@
                     <button class="btn" type="button">landing page</button>
                   </div>
                   <div class="featured__item-row">
-                    <div class="featured__item-purchase"></div>
+                    <div class="featured__item-purchase">
+                      <div class="featured__prise">$10-$50</div>
+                      <div class="featured__like">
+                        <span class="lnr lnr-heart heart"></span>
+                        <span>46</span>
+                      </div>
+                      <div class="featured__basket">
+                        <span class="lnr lnr-cart"></span>
+                        <span>634</span>
+                      </div>
+                    </div>
                     <div class="product__item-star">
                       <div class="rate-star"></div>
                     </div>
@@ -627,8 +669,18 @@
                     <button class="btn" type="button">landing page</button>
                   </div>
                   <div class="featured__item-row">
-                    <div class="featured__item-purchase"></div>
-                    <div class="featured__item-star">
+                    <div class="featured__item-purchase">
+                      <div class="featured__prise">$10-$50</div>
+                      <div class="featured__like">
+                        <span class="lnr lnr-heart heart"></span>
+                        <span>46</span>
+                      </div>
+                      <div class="featured__basket">
+                        <span class="lnr lnr-cart"></span>
+                        <span>634</span>
+                      </div>
+                    </div>
+                    <div class="product__item-star">
                       <div class="rate-star"></div>
                     </div>
                   </div>
@@ -643,10 +695,17 @@
         <div class="container">
           <div class="products__title title-block">
             Newest Release Products
-            <a class="products__filter" href="#">
+            <div class="products__filter" href="#">
               Filter by:
-              <img src="images/icons/filter-icon.svg" alt="" />
-            </a>
+              <ul class="products__filter-menu">
+                <li><a href="#">Trending items</a></li>
+                <li><a href="#">Best seller</a></li>
+                <li><a href="#">Best rating</a></li>
+                <li><a href="#">Low price</a></li>
+                <li><a href="#">High price</a></li>
+                <span class="filter-triangle"></span>
+              </ul>
+            </div>
           </div>
 
           <div class="products__inner">
@@ -699,9 +758,17 @@
                   </div>
                 </div>
                 <div class="products__item-info">
-                  <div class="products__item-purchase"></div>
-                  <div class="products__item-star">
-                    <div class="rate-star"></div>
+                  <div class="products__item-price">
+                    $10
+                  </div>
+                  <div class="products__item-like">
+                    <span class="lnr lnr-heart heart"></span>
+                    <span>56</span>
+                  </div>
+
+                  <div class="products__item-basket">
+                    <span class="lnr lnr-cart"></span>
+                    <span>634</span>
                   </div>
                 </div>
               </div>
@@ -733,9 +800,17 @@
                   </div>
                 </div>
                 <div class="products__item-info">
-                  <div class="products__item-purchase"></div>
-                  <div class="products__item-star">
-                    <div class="rate-star"></div>
+                  <div class="products__item-price">
+                    $10
+                  </div>
+                  <div class="products__item-like">
+                    <span class="lnr lnr-heart heart"></span>
+                    <span>56</span>
+                  </div>
+
+                  <div class="products__item-basket">
+                    <span class="lnr lnr-cart"></span>
+                    <span>634</span>
                   </div>
                 </div>
               </div>
@@ -767,9 +842,19 @@
                   </div>
                 </div>
                 <div class="products__item-info">
-                  <div class="products__item-purchase"></div>
+                  <div class="products__item-price">
+                    $10
+                  </div>
+                  <div class="products__item-like">
+                    <span class="lnr lnr-heart heart"></span>
+                    <span>56</span>
+                  </div>
                   <div class="products__item-star">
                     <div class="rate-star"></div>
+                  </div>
+                  <div class="products__item-basket">
+                    <span class="lnr lnr-cart"></span>
+                    <span>634</span>
                   </div>
                 </div>
               </div>
@@ -801,9 +886,19 @@
                   </div>
                 </div>
                 <div class="products__item-info">
-                  <div class="products__item-purchase"></div>
+                  <div class="products__item-price">
+                    $10
+                  </div>
+                  <div class="products__item-like">
+                    <span class="lnr lnr-heart heart"></span>
+                    <span>56</span>
+                  </div>
                   <div class="products__item-star">
                     <div class="rate-star"></div>
+                  </div>
+                  <div class="products__item-basket">
+                    <span class="lnr lnr-cart"></span>
+                    <span>634</span>
                   </div>
                 </div>
               </div>
@@ -835,9 +930,16 @@
                   </div>
                 </div>
                 <div class="products__item-info">
-                  <div class="products__item-purchase"></div>
-                  <div class="products__item-star">
-                    <div class="rate-star"></div>
+                  <div class="products__item-price">
+                    $10
+                  </div>
+                  <div class="products__item-like">
+                    <span class="lnr lnr-heart heart"></span>
+                    <span>56</span>
+                  </div>
+                  <div class="products__item-basket">
+                    <span class="lnr lnr-cart"></span>
+                    <span>634</span>
                   </div>
                 </div>
               </div>
@@ -869,9 +971,19 @@
                   </div>
                 </div>
                 <div class="products__item-info">
-                  <div class="products__item-purchase"></div>
+                  <div class="products__item-price">
+                    $10
+                  </div>
+                  <div class="products__item-like">
+                    <span class="lnr lnr-heart heart"></span>
+                    <span>56</span>
+                  </div>
                   <div class="products__item-star">
                     <div class="rate-star"></div>
+                  </div>
+                  <div class="products__item-basket">
+                    <span class="lnr lnr-cart"></span>
+                    <span>634</span>
                   </div>
                 </div>
               </div>
@@ -890,8 +1002,8 @@
           <div class="subscriber__title title-block">
             Your Followers Feed
             <div class="slider-arrow">
-              <a class="subscriber__prev-arrow prev-arrow icon-angle-left"></a>
-              <a class="subscriber__next-arrow next-arrow icon-angle-right"></a>
+              <a class="subscriber__prev-arrow prev-arrow lnr lnr-chevron-left"></a>
+              <a class="subscriber__next-arrow next-arrow lnr lnr-chevron-right"></a>
             </div>
           </div>
           <div class="subscriber__slider">
@@ -922,9 +1034,19 @@
                 </div>
               </div>
               <div class="products__item-info">
-                <div class="products__item-purchase"></div>
+                <div class="products__item-price">
+                  $10
+                </div>
+                <div class="products__item-like">
+                  <span class="lnr lnr-heart heart"></span>
+                  <span>56</span>
+                </div>
                 <div class="products__item-star">
                   <div class="rate-star"></div>
+                </div>
+                <div class="products__item-basket">
+                  <span class="lnr lnr-cart"></span>
+                  <span>634</span>
                 </div>
               </div>
             </div>
@@ -955,9 +1077,16 @@
                 </div>
               </div>
               <div class="products__item-info">
-                <div class="products__item-purchase"></div>
-                <div class="products__item-star">
-                  <div class="rate-star"></div>
+                <div class="products__item-price">
+                  $10
+                </div>
+                <div class="products__item-like">
+                  <span class="lnr lnr-heart heart"></span>
+                  <span>56</span>
+                </div>
+                <div class="products__item-basket">
+                  <span class="lnr lnr-cart"></span>
+                  <span>634</span>
                 </div>
               </div>
             </div>
@@ -988,9 +1117,19 @@
                 </div>
               </div>
               <div class="products__item-info">
-                <div class="products__item-purchase"></div>
+                <div class="products__item-price">
+                  $10
+                </div>
+                <div class="products__item-like">
+                  <span class="lnr lnr-heart heart"></span>
+                  <span>56</span>
+                </div>
                 <div class="products__item-star">
                   <div class="rate-star"></div>
+                </div>
+                <div class="products__item-basket">
+                  <span class="lnr lnr-cart"></span>
+                  <span>634</span>
                 </div>
               </div>
             </div>
@@ -1021,9 +1160,19 @@
                 </div>
               </div>
               <div class="products__item-info">
-                <div class="products__item-purchase"></div>
+                <div class="products__item-price">
+                  $10
+                </div>
+                <div class="products__item-like">
+                  <span class="lnr lnr-heart heart"></span>
+                  <span>56</span>
+                </div>
                 <div class="products__item-star">
                   <div class="rate-star"></div>
+                </div>
+                <div class="products__item-basket">
+                  <span class="lnr lnr-cart"></span>
+                  <span>634</span>
                 </div>
               </div>
             </div>
@@ -1054,9 +1203,16 @@
                 </div>
               </div>
               <div class="products__item-info">
-                <div class="products__item-purchase"></div>
-                <div class="products__item-star">
-                  <div class="rate-star"></div>
+                <div class="products__item-price">
+                  $10
+                </div>
+                <div class="products__item-like">
+                  <span class="lnr lnr-heart heart"></span>
+                  <span>56</span>
+                </div>
+                <div class="products__item-basket">
+                  <span class="lnr lnr-cart"></span>
+                  <span>634</span>
                 </div>
               </div>
             </div>
@@ -1087,18 +1243,359 @@
                 </div>
               </div>
               <div class="products__item-info">
-                <div class="products__item-purchase"></div>
+                <div class="products__item-price">
+                  $10
+                </div>
+                <div class="products__item-like">
+                  <span class="lnr lnr-heart heart"></span>
+                  <span>56</span>
+                </div>
                 <div class="products__item-star">
                   <div class="rate-star"></div>
+                </div>
+                <div class="products__item-basket">
+                  <span class="lnr lnr-cart"></span>
+                  <span>634</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <!-- /.subscriber -->
+      <section class="fact">
+        <div class="container">
+          <div class="fact__inner">
+            <div class="fact__item">
+              <div class="fact__box--yellow">
+                <span class="lnr lnr-briefcase"></span>
+                <div class="fact__sale">38,436</div>
+              </div>
+              <div class="fact__descr">items for sale</div>
+            </div>
+            <div class="fact__item">
+              <div class="fact__box--blue">
+                <span class="lnr lnr-cloud-download"></span>
+                <div class="fact__sale">3,736</div>
+              </div>
+              <div class="fact__descr">total sales</div>
+            </div>
+            <div class="fact__item">
+              <div class="fact__box--green">
+                <span class="lnr lnr-smile"></span>
+                <div class="fact__sale">2,736</div>
+              </div>
+              <div class="fact__descr">happy customers</div>
+            </div>
+            <div class="fact__item">
+              <div class="fact__box--red">
+                <span class="lnr lnr-users"></span>
+                <div class="fact__sale">25,736</div>
+              </div>
+              <div class="fact__descr">members</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.fact -->
+      <section class="choose">
+        <div class="container">
+          <div class="choose__title">
+            Why Choose <span>MartPlace</span>
+          </div>
+          <div class="choose__descr">
+            Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est
+            laborum dolo rumes fugats untras.
+          </div>
+          <div class="choose__inner">
+            <div class="choose__item">
+              <div class="choose__item-images choose__item-images--blue lnr lnr-license"></div>
+              <div class="choose__item-title">One Time Payment</div>
+              <div class="choose__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                scelerisque
+                the mattis, leo quam aliquet diam
+                congue is laoreet elit metus.
+              </div>
+              <span class="choose__item-number">01</span>
+            </div>
+
+            <div class="choose__item">
+              <div class="choose__item-images choose__item-images--violet lnr lnr-magic-wand"></div>
+              <div class="choose__item-title">Quality Products</div>
+              <div class="choose__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                scelerisque
+                the mattis, leo quam aliquet diam
+                congue is laoreet elit metus.
+              </div>
+              <span class="choose__item-number">02</span>
+            </div>
+
+            <div class="choose__item">
+              <div class="choose__item-images choose__item-images--green lnr lnr-lock"></div>
+              <div class="choose__item-title">100% Secure Payment</div>
+              <div class="choose__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                scelerisque
+                the mattis, leo quam aliquet diam
+                congue is laoreet elit metus.
+              </div>
+              <span class="choose__item-number">03</span>
+            </div>
+
+            <div class="choose__item">
+              <div class="choose__item-images choose__item-images--yellow lnr lnr-chart-bars"></div>
+              <div class="choose__item-title">Well Organized Code</div>
+              <div class="choose__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                scelerisque
+                the mattis, leo quam aliquet diam
+                congue is laoreet elit metus.
+              </div>
+              <span class="choose__item-number">04</span>
+            </div>
+
+            <div class="choose__item">
+              <div class="choose__item-images choose__item-images--sheet lnr lnr-leaf"></div>
+              <div class="choose__item-title">Life Time Free Update</div>
+              <div class="choose__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                scelerisque
+                the mattis, leo quam aliquet diam
+                congue is laoreet elit metus.
+              </div>
+              <span class="choose__item-number">05</span>
+            </div>
+
+            <div class="choose__item">
+              <div class="choose__item-images choose__item-images--red lnr lnr-phone"></div>
+              <div class="choose__item-title">Fast and Friendly Support</div>
+              <div class="choose__item-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                scelerisque
+                the mattis, leo quam aliquet diam
+                congue is laoreet elit metus.
+              </div>
+              <span class="choose__item-number">06</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.choose -->
+
+      <section class="sellbuy">
+        <div class="container-fluid">
+          <div class="sellbuy__inner">
+            <div class="sellbuy__item" style="background-image: url(images/sellbuy__bg-1.jpg);">
+              <div class="sellbuy__images">
+                <img src="images/icons/sellbuy__images-1.jpg" alt="">
+              </div>
+              <div class="sellbuy__title">Sell Your Products</div>
+              <div class="sellbuy__text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet diamcongue is laoreet elit metus.
+              </div>
+              <a href="#" class="sellbuy__link">Become an Author</a>
+            </div>
+            <div class="sellbuy__item" style="background-image: url(images/sellbuy__bg-2.jpg);">
+              <div class="sellbuy__images">
+                <img src="images/icons/sellbuy__images-1.jpg" alt="">
+              </div>
+              <div class="sellbuy__title">Sell Your Products</div>
+              <div class="sellbuy__text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet diamcongue is laoreet elit metus.
+              </div>
+              <a href="#" class="sellbuy__link">Become an Author</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.sellbuy -->
+      <section class="clients">
+        <div class="container">
+          <div class="clients__title">
+            Our Clients <span>Feedback</span>
+          </div>
+          <div class="clients__text">
+            Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est
+            laborum dolo rumes fugats untras.
+          </div>
+          <div class="clients__inner">
+            <div class="clients__item">
+              <div class="clients__item-user user">
+                <a class="user__photo" href="#" style="background-image: url(images/icons/header-avatar.jpg);"></a>
+                <div class="user__info">
+                  <a class="user__name" href="#">Taofiqul Hakim</a>
+                  <div class="user__position">Product Designer</div>
+                </div>
+                <a class="clients__icon lnr lnr-bubble" href="#"></a>
+              </div>
+              <div class="clients__item-text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+                aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is mollis. Praesent
+                the pharetra, justo ut scelerisque.
+              </div>
+            </div>
+            <div class="clients__item">
+              <div class="clients__item-user user">
+                <a class="user__photo" href="#" style="background-image: url(images/icons/header-avatar.jpg);"></a>
+                <div class="user__info">
+                  <a class="user__name" href="#">Saifullah Al Murtafee</a>
+                  <div class="user__position">Product Designer</div>
+                </div>
+                <a class="clients__icon lnr lnr-bubble" href="#"></a>
+              </div>
+              <div class="clients__item-text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+                aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is mollis. Praesent
+                the pharetra, justo ut scelerisque.
+              </div>
+            </div>
+          </div>
+          <a href="#" class="clients__link">View All Reviews</a>
+        </div>
+      </section>
+      <!-- /.clients -->
+      <section class="blog">
+        <div class="container">
+          <div class="blog__title">
+            Latest <span>News</span>
+          </div>
+          <div class="blog__text">
+            Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est
+            laborum dolo rumes fugats untras.
+          </div>
+          <div class="blog__inner">
+
+            <div class="blog__item">
+              <div class="blog__item-img" style="background-image: url(images/content/featured-item.jpg);"></div>
+              <div class="blog__item-descr">
+                <div class="blog__item-title">Web Design Trends in 2017</div>
+                <div class="blog__item-text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                  the mattis, leo quam aliquet congue.
+                </div>
+              </div>
+              <div class="blog__item-line line">
+                <div class="line__time">
+                  <span class="lnr lnr-clock time"></span>
+                  <span>24 Feb 2017</span>
+                </div>
+                <div class="line__box">
+                  <div class="line__box-reviews">
+                    <span class="lnr lnr-bubble"></span>
+                    <span>45</span>
+                  </div>
+                  <div class="line__box-views">
+                    <span class="lnr lnr-eye"></span>
+                    <span>345</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="blog__item">
+              <div class="blog__item-img" style="background-image: url(images/content/featured-item.jpg);"></div>
+              <div class="blog__item-descr">
+                <div class="blog__item-title">
+                  The best advices to start your
+                  own project
+                </div>
+                <div class="blog__item-text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                  the mattis, leo quam aliquet congue.
+                </div>
+              </div>
+              <div class="blog__item-line line">
+                <div class="line__time">
+                  <span class="lnr lnr-clock time"></span>
+                  <span>15 Mar 2017</span>
+                </div>
+                <div class="line__box">
+                  <div class="line__box-reviews">
+                    <span class="lnr lnr-bubble"></span>
+                    <span>45</span>
+                  </div>
+                  <div class="line__box-views">
+                    <span class="lnr lnr-eye"></span>
+                    <span>345</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="blog__item">
+              <div class="blog__item-img" style="background-image: url(images/content/featured-item.jpg);"></div>
+              <div class="blog__item-descr">
+                <div class="blog__item-title">Best Related Post Plugin</div>
+                <div class="blog__item-text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                  the mattis, leo quam aliquet congue.
+                </div>
+              </div>
+              <div class="blog__item-line line">
+                <div class="line__time">
+                  <span class="lnr lnr-clock time"></span>
+                  <span>24 Feb 2017</span>
+                </div>
+                <div class="line__box">
+                  <div class="line__box-reviews">
+                    <span class="lnr lnr-bubble"></span>
+                    <span>45</span>
+                  </div>
+                  <div class="line__box-views">
+                    <span class="lnr lnr-eye"></span>
+                    <span>345</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.blog -->
+      <section class="back">
+        <div class="container">
+          <div class="back__inner">
+            <div class="back__wrapper border-left">
+              <div class="back__item">
+                <div class="back__images" style="background-image: url(images/content/back-img1.jpg);">
+                </div>
+                <div class="back__descr">
+                  30 Days Money Back <span>Guarantee</span>
+                </div>
+              </div>
+            </div>
+            <div class="back__wrapper">
+              <div class="back__item">
+                <div class="images__inner">
+                  <div class="back__images back__images--last"
+                    style="background-image: url(images/content/back-img2.jpg);">
+                  </div>
+                </div>
+                <div class="back__descr">
+                  30 Days Money Back <span>Guarantee</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.back -->
+      <section class="banner">
+        <div class="container">
+          <div class="banner__inner">
+            <div class="banner__title">
+              Ready to Join Our Marketplace!
+            </div>
+            <div class="banner__text">
+              Over 25,000 designers and developers trust the MartPlace.
+            </div>
+            <a href="#" class="banner__link">Join Us Today</a>
+          </div>
+        </div>
+      </section>
+      <!-- /.banner -->
+      <!-- end content -->
     </div>
   </div>
-  <!-- /.subscriber -->
+
   <!-- STOP WRITE CODE -->
   <footer class="footer">
     <div class="footer__content">
@@ -1108,14 +1605,13 @@
             <div class="footer__logo">
               <a class="footer__logo-link" href="#">
                 <img class="footer__logo-img" src="images/footer-logo.png" alt="Logo" />
-                <div class="footer__logo-text">Mart<span>Place</span></div>
               </a>
             </div>
             <div class="footer__col-text">
               Nunc placerat mi id nisi interdum they mollis. Praesent
               pharetra, justo ut scel erisque the mattis, leo quam.
             </div>
-            <a class="footer__info-phone" href="tel:67898752235">Phone: +6789-875-2235</a>
+            <a class="footer__info-phone lnr lnr-phone-handset" href="tel:67898752235">Phone: +6789-875-2235</a>
             <div class="footer__info-email">support@aazztech.com</div>
             <div class="footer__info-address">
               202 New Hampshire Avenue Northwest #100, New York-2573
@@ -1177,7 +1673,7 @@
       <div class="container">
         <div class="foter__copy-text">
           ©2017 <span>MartPlace.</span> All rights reserved. Created by
-          <span>AazzTech</span>
+          <a class="foter__copy-link" href="#">AazzTech</a>
         </div>
       </div>
     </div>

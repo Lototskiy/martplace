@@ -96,6 +96,7 @@ gulp.task("style", function () {
 			'node_modules/slick-carousel/slick/slick.css',
 			"node_modules/ion-rangeslider/css/ion.rangeSlider.css",
 			"node_modules/rateyo/src/jquery.rateyo.css",
+			// "node_modules/swiper/css/swiper.css",
 		])
 		.pipe(sourcemaps.init())
 		.pipe(concat("libs.min.css")) //склеиваем их в один файл с указанным именем
@@ -114,6 +115,7 @@ gulp.task("script", function () {
 			'node_modules/slick-carousel/slick/slick.js',
 			"node_modules/rateyo/src/jquery.rateyo.js",
 			"node_modules/ion-rangeslider/js/ion.rangeSlider.js",
+			// "node_modules/swiper/js/swiper.js",
 			"node_modules/mixitup/dist/mixitup.js"
 		])
 		.pipe(size())

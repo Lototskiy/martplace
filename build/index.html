@@ -31,7 +31,7 @@
                 </div>
                 <div class="notifacation__box">
                   <a class="notifacation header__circle active lnr lnr-alarm" href="#"><span>25</span></a>
-                  <div class="notifacation__dropdown dropdown">
+                  <div class="notifacation__dropdown dropdown-menu">
                     <div class="notifacation__top">
                       <div class="notifacation__title">
                         My Notifications
@@ -100,7 +100,7 @@
                 <!-- end notifacation__box -->
                 <div class="messega__box">
                   <a class="messega header__circle active lnr lnr-envelope" href="#"><span>6</span></a>
-                  <div class="dropdown">
+                  <div class="dropdown-menu">
                     <div class="messega__top">
                       <div class="messega__title">
                         My Messages
@@ -177,7 +177,7 @@
                 <!-- end messega__box -->
                 <div class="basket__box">
                   <a class="basket header__circle active lnr lnr-cart" href="#"><span>2</span></a>
-                  <div class="basket__dropdown dropdown">
+                  <div class="basket__dropdown dropdown-menu">
                     <div class="basket__items">
                       <div class="basket__item">
 
@@ -235,7 +235,7 @@
                       </div>
                     </div>
                   </a>
-                  <div class="dropdown">
+                  <div class="dropdown-menu">
                     <ul>
                       <li>
                         <a class="user__dropdown-link " href="#">
@@ -458,16 +458,14 @@
             <button type="button">Popular Products</button>
           </div>
           <div class="search__form">
-            <form action="">
+            <form>
               <input type="text" placeholder="Search your products..." required />
-              <div class="search__form-select">
-                <select>
-                  <option value="" selected>All Categories</option>
-                  <option value="tea">website</option>
-                  <option value="coffee">plugin</option>
-                  <option value="milk">landing page</option>
-                </select>
-              </div>
+              <select class="styler" data-placeholder="All Categories">
+                <option value="categories" selected></option>
+                <option value="website">website</option>
+                <option value="plugin">plugin</option>
+                <option value="landing">landing page</option>
+              </select>
               <button class="search__form-btn" type="button">
                 Search Now
               </button>
@@ -525,167 +523,176 @@
         <div class="container">
           <div class="featured__title title-block">
             Weekly Featured Products
-            <div class="slider-arrow">
-              <a class="featured__prev-arrow prev-arrow lnr lnr-chevron-left"></a>
-              <a class="featured__next-arrow next-arrow lnr lnr-chevron-right"></a>
+            <div class="featured_arrow">
+              <div class="featured_arrow-prev"></div>
+              <div class="featured_arrow-next"></div>
             </div>
           </div>
           <div class="featured__slider">
-            <div class="featured__item">
-              <div class="featured__inner">
-                <div class="featured__item-img" style="
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="featured__item">
+                  <div class="featured__inner">
+                    <div class="featured__item-img" style="
                       background-image: url(images/content/featured-item.jpg);
                     "></div>
-                <div class="featured__item-content">
-                  <div class="featured__item-title">
-                    One Page Resume Template
-                  </div>
-                  <div class="featured__item-subtitle subtitle">
-                    <div class="subtitle__user">
-                      <div class="subtitle__user-img" style="
+                    <div class="featured__item-content">
+                      <div class="featured__item-title">
+                        One Page Resume Template
+                      </div>
+                      <div class="featured__item-subtitle subtitle">
+                        <div class="subtitle__user">
+                          <div class="subtitle__user-img" style="
                             background-image: url(images/content/subtitle-user.jpg);
                           "></div>
-                      <div class="subtitle__user-name">AazzTech</div>
-                    </div>
-                    <a href="#" class="subtitle_link">
-                      <i class="icon-wordpress"></i>
-                      <span>WordPress</span>
-                    </a>
-                  </div>
-                  <div class="featured__item-text">
-                    Nunc placerat mi id nisi interdum mollis. Praesent
-                    pharetra, justo ut scelerisque the mattis, leo quam
-                    aliquet congue placerat mi id nisi interdum mollis.
-                    Praesent pharetra, justo ut scelerisque the mattis, leo
-                    quam aliquet congue justo ut scelerisque.
-                  </div>
-                  <div class="featured__item-btn">
-                    <button class="btn" type="button">website</button>
-                    <button class="btn" type="button">plugin</button>
-                    <button class="btn" type="button">landing page</button>
-                  </div>
-                  <div class="featured__item-row">
-                    <div class="featured__item-purchase">
-                      <div class="featured__prise">$10-$50</div>
-                      <div class="featured__like">
-                        <span class="lnr lnr-heart heart"></span>
-                        <span>46</span>
+                          <div class="subtitle__user-name">AazzTech</div>
+                        </div>
+                        <a href="#" class="subtitle_link">
+                          <i class="icon-wordpress"></i>
+                          <span>WordPress</span>
+                        </a>
                       </div>
-                      <div class="featured__basket">
-                        <span class="lnr lnr-cart"></span>
-                        <span>634</span>
+                      <div class="featured__item-text">
+                        Nunc placerat mi id nisi interdum mollis. Praesent
+                        pharetra, justo ut scelerisque the mattis, leo quam
+                        aliquet congue placerat mi id nisi interdum mollis.
+                        Praesent pharetra, justo ut scelerisque the mattis, leo
+                        quam aliquet congue justo ut scelerisque.
                       </div>
-                    </div>
-                    <div class="product__item-star">
-                      <div class="rate-star"></div>
+                      <div class="featured__item-btn">
+                        <button class="btn" type="button">website</button>
+                        <button class="btn" type="button">plugin</button>
+                        <button class="btn" type="button">landing page</button>
+                      </div>
+                      <div class="featured__item-row">
+                        <div class="featured__item-purchase">
+                          <div class="featured__prise">$10-$50</div>
+                          <div class="featured__like">
+                            <span class="lnr lnr-heart heart"></span>
+                            <span>46</span>
+                          </div>
+                          <div class="featured__basket">
+                            <span class="lnr lnr-cart"></span>
+                            <span>634</span>
+                          </div>
+                        </div>
+                        <div class="product__item-star">
+                          <div class="rate-star"></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="featured__item">
-              <div class="featured__inner">
-                <div class="featured__item-img" style="
+              <div class="swiper-slide">
+                <div class="featured__item">
+                  <div class="featured__inner">
+                    <div class="featured__item-img" style="
                       background-image: url(images/content/featured-item.jpg);
                     "></div>
-                <div class="featured__item-content">
-                  <div class="featured__item-title">
-                    One Page Resume Template
-                  </div>
-                  <div class="featured__item-subtitle subtitle">
-                    <div class="subtitle__user">
-                      <div class="subtitle__user-img" style="
+                    <div class="featured__item-content">
+                      <div class="featured__item-title">
+                        One Page Resume Template
+                      </div>
+                      <div class="featured__item-subtitle subtitle">
+                        <div class="subtitle__user">
+                          <div class="subtitle__user-img" style="
                             background-image: url(images/content/subtitle-user.jpg);
                           "></div>
-                      <div class="subtitle__user-name">AazzTech</div>
-                    </div>
-                    <a href="#" class="subtitle_link">
-                      <i class="icon-wordpress"></i>
-                      <span>WordPress</span>
-                    </a>
-                  </div>
-                  <div class="featured__item-text">
-                    Nunc placerat mi id nisi interdum mollis. Praesent
-                    pharetra, justo ut scelerisque the mattis, leo quam
-                    aliquet congue placerat mi id nisi interdum mollis.
-                    Praesent pharetra, justo ut scelerisque the mattis, leo
-                    quam aliquet congue justo ut scelerisque.
-                  </div>
-                  <div class="featured__item-btn">
-                    <button class="btn" type="button">website</button>
-                    <button class="btn" type="button">plugin</button>
-                    <button class="btn" type="button">landing page</button>
-                  </div>
-                  <div class="featured__item-row">
-                    <div class="featured__item-purchase">
-                      <div class="featured__prise">$10-$50</div>
-                      <div class="featured__like">
-                        <span class="lnr lnr-heart heart"></span>
-                        <span>46</span>
+                          <div class="subtitle__user-name">AazzTech</div>
+                        </div>
+                        <a href="#" class="subtitle_link">
+                          <i class="icon-wordpress"></i>
+                          <span>WordPress</span>
+                        </a>
                       </div>
-                      <div class="featured__basket">
-                        <span class="lnr lnr-cart"></span>
-                        <span>634</span>
+                      <div class="featured__item-text">
+                        Nunc placerat mi id nisi interdum mollis. Praesent
+                        pharetra, justo ut scelerisque the mattis, leo quam
+                        aliquet congue placerat mi id nisi interdum mollis.
+                        Praesent pharetra, justo ut scelerisque the mattis, leo
+                        quam aliquet congue justo ut scelerisque.
                       </div>
-                    </div>
-                    <div class="product__item-star">
-                      <div class="rate-star"></div>
+                      <div class="featured__item-btn">
+                        <button class="btn" type="button">website</button>
+                        <button class="btn" type="button">plugin</button>
+                        <button class="btn" type="button">landing page</button>
+                      </div>
+                      <div class="featured__item-row">
+                        <div class="featured__item-purchase">
+                          <div class="featured__prise">$10-$50</div>
+                          <div class="featured__like">
+                            <span class="lnr lnr-heart heart"></span>
+                            <span>46</span>
+                          </div>
+                          <div class="featured__basket">
+                            <span class="lnr lnr-cart"></span>
+                            <span>634</span>
+                          </div>
+                        </div>
+                        <div class="product__item-star">
+                          <div class="rate-star"></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="featured__item">
-              <div class="featured__inner">
-                <div class="featured__item-img" style="
+              <div class="swiper-slide">
+                <div class="featured__item">
+                  <div class="featured__inner">
+                    <div class="featured__item-img" style="
                       background-image: url(images/content/featured-item.jpg);
                     "></div>
-                <div class="featured__item-content">
-                  <div class="featured__item-title">
-                    One Page Resume Template
-                  </div>
-                  <div class="featured__item-subtitle subtitle">
-                    <div class="subtitle__user">
-                      <div class="subtitle__user-img" style="
+                    <div class="featured__item-content">
+                      <div class="featured__item-title">
+                        One Page Resume Template
+                      </div>
+                      <div class="featured__item-subtitle subtitle">
+                        <div class="subtitle__user">
+                          <div class="subtitle__user-img" style="
                             background-image: url(images/content/subtitle-user.jpg);
                           "></div>
-                      <div class="subtitle__user-name">AazzTech</div>
-                    </div>
-                    <a href="#" class="subtitle_link">
-                      <i class="icon-wordpress"></i>
-                      <span>WordPress</span>
-                    </a>
-                  </div>
-                  <div class="featured__item-text">
-                    Nunc placerat mi id nisi interdum mollis. Praesent
-                    pharetra, justo ut scelerisque the mattis, leo quam
-                    aliquet congue placerat mi id nisi interdum mollis.
-                    Praesent pharetra, justo ut scelerisque the mattis, leo
-                    quam aliquet congue justo ut scelerisque.
-                  </div>
-                  <div class="featured__item-btn">
-                    <button class="btn" type="button">website</button>
-                    <button class="btn" type="button">plugin</button>
-                    <button class="btn" type="button">landing page</button>
-                  </div>
-                  <div class="featured__item-row">
-                    <div class="featured__item-purchase">
-                      <div class="featured__prise">$10-$50</div>
-                      <div class="featured__like">
-                        <span class="lnr lnr-heart heart"></span>
-                        <span>46</span>
+                          <div class="subtitle__user-name">AazzTech</div>
+                        </div>
+                        <a href="#" class="subtitle_link">
+                          <i class="icon-wordpress"></i>
+                          <span>WordPress</span>
+                        </a>
                       </div>
-                      <div class="featured__basket">
-                        <span class="lnr lnr-cart"></span>
-                        <span>634</span>
+                      <div class="featured__item-text">
+                        Nunc placerat mi id nisi interdum mollis. Praesent
+                        pharetra, justo ut scelerisque the mattis, leo quam
+                        aliquet congue placerat mi id nisi interdum mollis.
+                        Praesent pharetra, justo ut scelerisque the mattis, leo
+                        quam aliquet congue justo ut scelerisque.
                       </div>
-                    </div>
-                    <div class="product__item-star">
-                      <div class="rate-star"></div>
+                      <div class="featured__item-btn">
+                        <button class="btn" type="button">website</button>
+                        <button class="btn" type="button">plugin</button>
+                        <button class="btn" type="button">landing page</button>
+                      </div>
+                      <div class="featured__item-row">
+                        <div class="featured__item-purchase">
+                          <div class="featured__prise">$10-$50</div>
+                          <div class="featured__like">
+                            <span class="lnr lnr-heart heart"></span>
+                            <span>46</span>
+                          </div>
+                          <div class="featured__basket">
+                            <span class="lnr lnr-cart"></span>
+                            <span>634</span>
+                          </div>
+                        </div>
+                        <div class="product__item-star">
+                          <div class="rate-star"></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
@@ -1001,261 +1008,281 @@
         <div class="container">
           <div class="subscriber__title title-block">
             Your Followers Feed
-            <div class="slider-arrow">
-              <a class="subscriber__prev-arrow prev-arrow lnr lnr-chevron-left"></a>
-              <a class="subscriber__next-arrow next-arrow lnr lnr-chevron-right"></a>
+            <div class="subscriber_arrow">
+              <div class="subscriber_arrow-prev"></div>
+              <div class="subscriber_arrow-next"></div>
             </div>
           </div>
           <div class="subscriber__slider">
-            <div class="products__item">
-              <a class="products__item-img" href="#" style="
-                    background-image: url(images/content/product-item.jpg);
-                  ">
-                <button type="button">More Info</button>
-                <button type="button">Live Demo</button>
-              </a>
-              <div class="products__item-content">
-                <a class="products__item-title" href="#">Bryson - Portfolio Template</a>
-                <div class="products__item-subtitle subtitle">
-                  <div class="subtitle__user">
-                    <div class="subtitle__user-img" style="
-                          background-image: url(images/content/subtitle-user.jpg);
-                        "></div>
-                    <div class="subtitle__user-name">Artcorner</div>
-                  </div>
-                  <a href="#" class="subtitle_link">
-                    <i class="icon-html5"></i>
-                    <span>HTML</span>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="products__item">
+                  <a class="products__item-img" href="#" style="
+                        background-image: url(images/content/product-item.jpg);
+                      ">
+                    <button type="button">More Info</button>
+                    <button type="button">Live Demo</button>
                   </a>
-                </div>
-                <div class="products__item-text">
-                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
-                  justo ut scelerisque the mattis, leo quam aliquet congue.
-                </div>
-              </div>
-              <div class="products__item-info">
-                <div class="products__item-price">
-                  $10
-                </div>
-                <div class="products__item-like">
-                  <span class="lnr lnr-heart heart"></span>
-                  <span>56</span>
-                </div>
-                <div class="products__item-star">
-                  <div class="rate-star"></div>
-                </div>
-                <div class="products__item-basket">
-                  <span class="lnr lnr-cart"></span>
-                  <span>634</span>
-                </div>
-              </div>
-            </div>
-            <div class="products__item">
-              <a class="products__item-img" href="#" style="
-                    background-image: url(images/content/product-item.jpg);
-                  ">
-                <button type="button">More Info</button>
-                <button type="button">Live Demo</button>
-              </a>
-              <div class="products__item-content">
-                <a class="products__item-title" href="#">Bryson - Portfolio Template</a>
-                <div class="products__item-subtitle subtitle">
-                  <div class="subtitle__user">
-                    <div class="subtitle__user-img" style="
-                          background-image: url(images/content/subtitle-user.jpg);
-                        "></div>
-                    <div class="subtitle__user-name">Artcorner</div>
+                  <div class="products__item-content">
+                    <a class="products__item-title" href="#">Bryson - Portfolio Template</a>
+                    <div class="products__item-subtitle subtitle">
+                      <div class="subtitle__user">
+                        <div class="subtitle__user-img" style="
+                              background-image: url(images/content/subtitle-user.jpg);
+                            "></div>
+                        <div class="subtitle__user-name">Artcorner</div>
+                      </div>
+                      <a href="#" class="subtitle_link">
+                        <i class="icon-html5"></i>
+                        <span>HTML</span>
+                      </a>
+                    </div>
+                    <div class="products__item-text">
+                      Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                      justo ut scelerisque the mattis, leo quam aliquet congue.
+                    </div>
                   </div>
-                  <a href="#" class="subtitle_link">
-                    <i class="icon-html5"></i>
-                    <span>HTML</span>
-                  </a>
-                </div>
-                <div class="products__item-text">
-                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
-                  justo ut scelerisque the mattis, leo quam aliquet congue.
-                </div>
-              </div>
-              <div class="products__item-info">
-                <div class="products__item-price">
-                  $10
-                </div>
-                <div class="products__item-like">
-                  <span class="lnr lnr-heart heart"></span>
-                  <span>56</span>
-                </div>
-                <div class="products__item-basket">
-                  <span class="lnr lnr-cart"></span>
-                  <span>634</span>
-                </div>
-              </div>
-            </div>
-            <div class="products__item">
-              <a class="products__item-img" href="#" style="
-                    background-image: url(images/content/product-item.jpg);
-                  ">
-                <button type="button">More Info</button>
-                <button type="button">Live Demo</button>
-              </a>
-              <div class="products__item-content">
-                <a class="products__item-title" href="#">Bryson - Portfolio Template</a>
-                <div class="products__item-subtitle subtitle">
-                  <div class="subtitle__user">
-                    <div class="subtitle__user-img" style="
-                          background-image: url(images/content/subtitle-user.jpg);
-                        "></div>
-                    <div class="subtitle__user-name">Artcorner</div>
+                  <div class="products__item-info">
+                    <div class="products__item-price">
+                      $10
+                    </div>
+                    <div class="products__item-like">
+                      <span class="lnr lnr-heart heart"></span>
+                      <span>56</span>
+                    </div>
+                    <div class="products__item-star">
+                      <div class="rate-star"></div>
+                    </div>
+                    <div class="products__item-basket">
+                      <span class="lnr lnr-cart"></span>
+                      <span>634</span>
+                    </div>
                   </div>
-                  <a href="#" class="subtitle_link">
-                    <i class="icon-html5"></i>
-                    <span>HTML</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="products__item">
+                  <a class="products__item-img" href="#" style="
+                        background-image: url(images/content/product-item.jpg);
+                      ">
+                    <button type="button">More Info</button>
+                    <button type="button">Live Demo</button>
                   </a>
-                </div>
-                <div class="products__item-text">
-                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
-                  justo ut scelerisque the mattis, leo quam aliquet congue.
-                </div>
-              </div>
-              <div class="products__item-info">
-                <div class="products__item-price">
-                  $10
-                </div>
-                <div class="products__item-like">
-                  <span class="lnr lnr-heart heart"></span>
-                  <span>56</span>
-                </div>
-                <div class="products__item-star">
-                  <div class="rate-star"></div>
-                </div>
-                <div class="products__item-basket">
-                  <span class="lnr lnr-cart"></span>
-                  <span>634</span>
-                </div>
-              </div>
-            </div>
-            <div class="products__item">
-              <a class="products__item-img" href="#" style="
-                    background-image: url(images/content/product-item.jpg);
-                  ">
-                <button type="button">More Info</button>
-                <button type="button">Live Demo</button>
-              </a>
-              <div class="products__item-content">
-                <a class="products__item-title" href="#">Bryson - Portfolio Template</a>
-                <div class="products__item-subtitle subtitle">
-                  <div class="subtitle__user">
-                    <div class="subtitle__user-img" style="
-                          background-image: url(images/content/subtitle-user.jpg);
-                        "></div>
-                    <div class="subtitle__user-name">Artcorner</div>
+                  <div class="products__item-content">
+                    <a class="products__item-title" href="#">Bryson - Portfolio Template</a>
+                    <div class="products__item-subtitle subtitle">
+                      <div class="subtitle__user">
+                        <div class="subtitle__user-img" style="
+                              background-image: url(images/content/subtitle-user.jpg);
+                            "></div>
+                        <div class="subtitle__user-name">Artcorner</div>
+                      </div>
+                      <a href="#" class="subtitle_link">
+                        <i class="icon-html5"></i>
+                        <span>HTML</span>
+                      </a>
+                    </div>
+                    <div class="products__item-text">
+                      Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                      justo ut scelerisque the mattis, leo quam aliquet congue.
+                    </div>
                   </div>
-                  <a href="#" class="subtitle_link">
-                    <i class="icon-html5"></i>
-                    <span>HTML</span>
-                  </a>
-                </div>
-                <div class="products__item-text">
-                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
-                  justo ut scelerisque the mattis, leo quam aliquet congue.
-                </div>
-              </div>
-              <div class="products__item-info">
-                <div class="products__item-price">
-                  $10
-                </div>
-                <div class="products__item-like">
-                  <span class="lnr lnr-heart heart"></span>
-                  <span>56</span>
-                </div>
-                <div class="products__item-star">
-                  <div class="rate-star"></div>
-                </div>
-                <div class="products__item-basket">
-                  <span class="lnr lnr-cart"></span>
-                  <span>634</span>
-                </div>
-              </div>
-            </div>
-            <div class="products__item">
-              <a class="products__item-img" href="#" style="
-                    background-image: url(images/content/product-item.jpg);
-                  ">
-                <button type="button">More Info</button>
-                <button type="button">Live Demo</button>
-              </a>
-              <div class="products__item-content">
-                <a class="products__item-title" href="#">Bryson - Portfolio Template</a>
-                <div class="products__item-subtitle subtitle">
-                  <div class="subtitle__user">
-                    <div class="subtitle__user-img" style="
-                          background-image: url(images/content/subtitle-user.jpg);
-                        "></div>
-                    <div class="subtitle__user-name">Artcorner</div>
+                  <div class="products__item-info">
+                    <div class="products__item-price">
+                      $10
+                    </div>
+                    <div class="products__item-like">
+                      <span class="lnr lnr-heart heart"></span>
+                      <span>56</span>
+                    </div>
+                    <div class="products__item-star">
+                      <div class="rate-star"></div>
+                    </div>
+                    <div class="products__item-basket">
+                      <span class="lnr lnr-cart"></span>
+                      <span>634</span>
+                    </div>
                   </div>
-                  <a href="#" class="subtitle_link">
-                    <i class="icon-html5"></i>
-                    <span>HTML</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="products__item">
+                  <a class="products__item-img" href="#" style="
+                        background-image: url(images/content/product-item.jpg);
+                      ">
+                    <button type="button">More Info</button>
+                    <button type="button">Live Demo</button>
                   </a>
-                </div>
-                <div class="products__item-text">
-                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
-                  justo ut scelerisque the mattis, leo quam aliquet congue.
-                </div>
-              </div>
-              <div class="products__item-info">
-                <div class="products__item-price">
-                  $10
-                </div>
-                <div class="products__item-like">
-                  <span class="lnr lnr-heart heart"></span>
-                  <span>56</span>
-                </div>
-                <div class="products__item-basket">
-                  <span class="lnr lnr-cart"></span>
-                  <span>634</span>
-                </div>
-              </div>
-            </div>
-            <div class="products__item">
-              <a class="products__item-img" href="#" style="
-                    background-image: url(images/content/product-item.jpg);
-                  ">
-                <button type="button">More Info</button>
-                <button type="button">Live Demo</button>
-              </a>
-              <div class="products__item-content">
-                <a class="products__item-title" href="#">Bryson - Portfolio Template</a>
-                <div class="products__item-subtitle subtitle">
-                  <div class="subtitle__user">
-                    <div class="subtitle__user-img" style="
-                          background-image: url(images/content/subtitle-user.jpg);
-                        "></div>
-                    <div class="subtitle__user-name">Artcorner</div>
+                  <div class="products__item-content">
+                    <a class="products__item-title" href="#">Bryson - Portfolio Template</a>
+                    <div class="products__item-subtitle subtitle">
+                      <div class="subtitle__user">
+                        <div class="subtitle__user-img" style="
+                              background-image: url(images/content/subtitle-user.jpg);
+                            "></div>
+                        <div class="subtitle__user-name">Artcorner</div>
+                      </div>
+                      <a href="#" class="subtitle_link">
+                        <i class="icon-html5"></i>
+                        <span>HTML</span>
+                      </a>
+                    </div>
+                    <div class="products__item-text">
+                      Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                      justo ut scelerisque the mattis, leo quam aliquet congue.
+                    </div>
                   </div>
-                  <a href="#" class="subtitle_link">
-                    <i class="icon-html5"></i>
-                    <span>HTML</span>
-                  </a>
-                </div>
-                <div class="products__item-text">
-                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
-                  justo ut scelerisque the mattis, leo quam aliquet congue.
+                  <div class="products__item-info">
+                    <div class="products__item-price">
+                      $10
+                    </div>
+                    <div class="products__item-like">
+                      <span class="lnr lnr-heart heart"></span>
+                      <span>56</span>
+                    </div>
+                    <div class="products__item-star">
+                      <div class="rate-star"></div>
+                    </div>
+                    <div class="products__item-basket">
+                      <span class="lnr lnr-cart"></span>
+                      <span>634</span>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="products__item-info">
-                <div class="products__item-price">
-                  $10
+              <div class="swiper-slide">
+                <div class="products__item">
+                  <a class="products__item-img" href="#" style="
+                        background-image: url(images/content/product-item.jpg);
+                      ">
+                    <button type="button">More Info</button>
+                    <button type="button">Live Demo</button>
+                  </a>
+                  <div class="products__item-content">
+                    <a class="products__item-title" href="#">Bryson - Portfolio Template</a>
+                    <div class="products__item-subtitle subtitle">
+                      <div class="subtitle__user">
+                        <div class="subtitle__user-img" style="
+                              background-image: url(images/content/subtitle-user.jpg);
+                            "></div>
+                        <div class="subtitle__user-name">Artcorner</div>
+                      </div>
+                      <a href="#" class="subtitle_link">
+                        <i class="icon-html5"></i>
+                        <span>HTML</span>
+                      </a>
+                    </div>
+                    <div class="products__item-text">
+                      Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                      justo ut scelerisque the mattis, leo quam aliquet congue.
+                    </div>
+                  </div>
+                  <div class="products__item-info">
+                    <div class="products__item-price">
+                      $10
+                    </div>
+                    <div class="products__item-like">
+                      <span class="lnr lnr-heart heart"></span>
+                      <span>56</span>
+                    </div>
+                    <div class="products__item-star">
+                      <div class="rate-star"></div>
+                    </div>
+                    <div class="products__item-basket">
+                      <span class="lnr lnr-cart"></span>
+                      <span>634</span>
+                    </div>
+                  </div>
                 </div>
-                <div class="products__item-like">
-                  <span class="lnr lnr-heart heart"></span>
-                  <span>56</span>
+              </div>
+              <div class="swiper-slide">
+                <div class="products__item">
+                  <a class="products__item-img" href="#" style="
+                        background-image: url(images/content/product-item.jpg);
+                      ">
+                    <button type="button">More Info</button>
+                    <button type="button">Live Demo</button>
+                  </a>
+                  <div class="products__item-content">
+                    <a class="products__item-title" href="#">Bryson - Portfolio Template</a>
+                    <div class="products__item-subtitle subtitle">
+                      <div class="subtitle__user">
+                        <div class="subtitle__user-img" style="
+                              background-image: url(images/content/subtitle-user.jpg);
+                            "></div>
+                        <div class="subtitle__user-name">Artcorner</div>
+                      </div>
+                      <a href="#" class="subtitle_link">
+                        <i class="icon-html5"></i>
+                        <span>HTML</span>
+                      </a>
+                    </div>
+                    <div class="products__item-text">
+                      Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                      justo ut scelerisque the mattis, leo quam aliquet congue.
+                    </div>
+                  </div>
+                  <div class="products__item-info">
+                    <div class="products__item-price">
+                      $10
+                    </div>
+                    <div class="products__item-like">
+                      <span class="lnr lnr-heart heart"></span>
+                      <span>56</span>
+                    </div>
+                    <div class="products__item-star">
+                      <div class="rate-star"></div>
+                    </div>
+                    <div class="products__item-basket">
+                      <span class="lnr lnr-cart"></span>
+                      <span>634</span>
+                    </div>
+                  </div>
                 </div>
-                <div class="products__item-star">
-                  <div class="rate-star"></div>
-                </div>
-                <div class="products__item-basket">
-                  <span class="lnr lnr-cart"></span>
-                  <span>634</span>
+              </div>
+              <div class="swiper-slide">
+                <div class="products__item">
+                  <a class="products__item-img" href="#" style="
+                        background-image: url(images/content/product-item.jpg);
+                      ">
+                    <button type="button">More Info</button>
+                    <button type="button">Live Demo</button>
+                  </a>
+                  <div class="products__item-content">
+                    <a class="products__item-title" href="#">Bryson - Portfolio Template</a>
+                    <div class="products__item-subtitle subtitle">
+                      <div class="subtitle__user">
+                        <div class="subtitle__user-img" style="
+                              background-image: url(images/content/subtitle-user.jpg);
+                            "></div>
+                        <div class="subtitle__user-name">Artcorner</div>
+                      </div>
+                      <a href="#" class="subtitle_link">
+                        <i class="icon-html5"></i>
+                        <span>HTML</span>
+                      </a>
+                    </div>
+                    <div class="products__item-text">
+                      Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                      justo ut scelerisque the mattis, leo quam aliquet congue.
+                    </div>
+                  </div>
+                  <div class="products__item-info">
+                    <div class="products__item-price">
+                      $10
+                    </div>
+                    <div class="products__item-like">
+                      <span class="lnr lnr-heart heart"></span>
+                      <span>56</span>
+                    </div>
+                    <div class="products__item-star">
+                      <div class="rate-star"></div>
+                    </div>
+                    <div class="products__item-basket">
+                      <span class="lnr lnr-cart"></span>
+                      <span>634</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
